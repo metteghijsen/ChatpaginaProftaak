@@ -37,6 +37,7 @@ html {
     /* --mdc-theme-secondary: #029342 !important; */
     --mdc-theme-on-primary: #ffffff !important;
     --mdc-theme-surface: #b73f37 !important;
+    --mdc-theme-secondary: #b73f37 !important;
     --mdc-theme-on-surface: #000000 !important;
     --mdc-text-field-icon: #4c4c4c !important;
 
@@ -84,6 +85,8 @@ a {
 .profilePicture {
     width: 50px;
     height: 50px;
+    position: relative;
+    z-index: 1;
 }
 
 .name-container {
@@ -132,6 +135,12 @@ a {
     height: 100vh;
     white-space: nowrap;
     margin-left: 10px;
+}
+
+.line {
+    width: 352px;
+    height: 0;
+    border: 1px solid rgba(102, 106, 112, 0.1);
 }
 
 .name h2 {
@@ -251,6 +260,7 @@ a {
     border-style: none;
     box-shadow: 0px 0px 18px 4px #00000014;
     margin-left: .5vw;
+    font-family: Montserrat-Regular;
 }
 
 .send-button {
@@ -261,4 +271,19 @@ a {
     background-color: var(--mdc-theme-primary);
     margin-top: auto;
 }
+
+/*.status-dot{*/
+/*    height: 14px;*/
+/*    width: 15px;*/
+/*    border: 5px solid #FFFFFF;*/
+/*    border-radius: 50%;*/
+/*    z-index: 99;*/
+/*    position: relative;*/
+/*    left: -10px;*/
+/*    bottom: -16px;*/
+/*}*/
+
+/*.green{*/
+/*    background: #4FB69D;*/
+/*}*/
 
